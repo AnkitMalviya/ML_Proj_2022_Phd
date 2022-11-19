@@ -6,27 +6,27 @@
 In PubTables-1M: Towards complete table extraction from unstructured sources, authors Brandon Smock, Rohith Pesala, and Robin Abraham put forth the Table Transformer concept. To measure advancements in table extraction from unstructured documents, table structure identification, and functional analysis, the authors provide PubTables-1M, a brand-new dataset. The authors develop two DETR models known as Table Transformers, one for table identification and one for table structure recognition.
 
 Model github repo is in : microsoft/table-transformer: Model training and evaluation code for our dataset PubTables-1M, developed to support the task of table extraction from unstructured documents. (github.com)
-	It contains two folder detr and src where we have to use src folder to train for both Table Detection and table Structure Recognition. Where the table detection code will detect the whole table with confidence label and with the coordinates of the bounding box around the table. And each rows and columns for the Table structure with the confidence label and bounding box for each row and column, altogether it will show a comprehensive structure.
+	##### It contains two folder detr and src where we have to use src folder to train for both Table Detection and table Structure Recognition. Where the table detection code will detect the whole table with confidence label and with the coordinates of the bounding box around the table. And each rows and columns for the Table structure with the confidence label and bounding box for each row and column, altogether it will show a comprehensive structure.
 	And the detr folder contains the detectron model which will help us to detect the tables, which acts as a wrapper for this object detection model.
 It has 575,305 pages of annotated documents that have tables on them for table detection. 947,642 completely annotated tables with comprehensive location (bounding box) data and text content for identifying table structure and performing functional analysis. All table rows, columns, and cells (including empty cells), as well as other marked structures like column headers and projected row headers, have complete bounding boxes in image and PDF coordinates.
 All tables and pages were rendered as pictures. For every word that appears in each table and page graphic, there are bounding boxes and text. Additional cell attributes weren't employed in the model's training at this time. To ensure the annotations are as noise-free as feasible, they had also canonicalized cells in the headers and used a number of quality check procedures. For further details you can check in there given paper : 2110.00061.pdf (arxiv.org)
 	Also they had provided the weights of the pretrained models for both Table detection and Table structure detection which can be used to train on our new data.
-	They trained the models for 20 epochs only.
-	You can change the number of epochs in the structure.config and dectron.config file at the src folder. And also can reduce the size of the data at the text files of the table structure and pdf annotation dataset folder for training purpose.
+	##### They trained the models for 20 epochs only.
+	##### You can change the number of epochs in the structure.config and dectron.config file at the src folder. And also can reduce the size of the data at the text files of the table structure and pdf annotation dataset folder for training purpose.
 For the evaluation metrices used in the table transformer researcher had focused on the GriTs method, 2203.12555.pdf (arxiv.org)
 To download the dataset please follow the following link : Microsoft Research Open Data (msropendata.com)
 
-## Steps to Train and Test the Model.
+### Steps to Train and Test the Model.
 
 First we need to create the environment if it’s not there in the conda environment list. The environment name will be tables-detr. 
-Step 1 : Check whether the env is there or not by using cmd in linux terminal :
+> Step 1 : Check whether the env is there or not by using cmd in linux terminal :
 ‘conda env list ‘ where env name will be : tables-detr
 If the environment is not installed then we have to create the environment by going to this particular path which is : cd SageMaker/ table-transformer/
 Then run this command to create the environment : conda env create -f environment.yml
-Step 2 : Then activate the env using : source activate tables-detr
-Step 3 : After activation go to the folder where main.py is present :
+> Step 2 : Then activate the env using : source activate tables-detr
+> Step 3 : After activation go to the folder where main.py is present :
 cd SageMaker/table-transformer/src/
-Step 4 : Then run this command to train the table structure model : 
+> Step 4 : Then run this command to train the table structure model : 
 (tables-detr2) C:\Users\malvi\ML_project\table-transformer-main\src>python main.py --data_type structure --config_file structure_config.json --data_root_dir C://Users//malvi//Desktop//Main//PhD//course_work//ML//Project//data//pubTable//PubTables-1M-Image_Table_Structure_PASCAL_VOC//PubTables1M-Structure-PASCAL-VOC
 And
 Then run this command to train the table detection model : 
