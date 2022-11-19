@@ -87,11 +87,14 @@ Table Structure Recognition Output
 
 
  
-Number of Tables and Columns
+#### Number of Tables and Columns
+
+![Number of Tables and Columns](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture7.jpg)
  
 
-Confidence score and Bounding Boxes Coordinates
+#### Confidence score and Bounding Boxes Coordinates
  
+![Confidence score and Bounding Boxes Coordinates](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture8.jpg)
 
 
 
