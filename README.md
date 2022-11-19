@@ -23,9 +23,12 @@ First we need to create the environment if it’s not there in the conda environ
 ‘conda env list ‘ where env name will be : tables-detr
 If the environment is not installed then we have to create the environment by going to this particular path which is : cd SageMaker/ table-transformer/
 Then run this command to create the environment : conda env create -f environment.yml
+
 > Step 2 : Then activate the env using : source activate tables-detr
+
 > Step 3 : After activation go to the folder where main.py is present :
 cd SageMaker/table-transformer/src/
+
 > Step 4 : Then run this command to train the table structure model : 
 (tables-detr2) C:\Users\malvi\ML_project\table-transformer-main\src>python main.py --data_type structure --config_file structure_config.json --data_root_dir C://Users//malvi//Desktop//Main//PhD//course_work//ML//Project//data//pubTable//PubTables-1M-Image_Table_Structure_PASCAL_VOC//PubTables1M-Structure-PASCAL-VOC
 And
