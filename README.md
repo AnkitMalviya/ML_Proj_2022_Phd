@@ -150,7 +150,9 @@ Basic idea of preprocessing:
 •	Save Image and mask to disk
 
 •	converting processed_data to csv file.
+
 >	Let’s check the masks that were created based on table and column coordinates
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture1.png)
  
 
 ##                               Steps to Train and Test the Model
