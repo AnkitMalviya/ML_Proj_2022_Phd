@@ -42,14 +42,15 @@ cd SageMaker/table-transformer/src/
 
 > Step 4 : Then run this command to train the table structure model : 
 (tables-detr2) C:\Users\malvi\ML_project\table-transformer-main\src>python main.py --data_type structure --config_file structure_config.json --data_root_dir C://Users//malvi//Desktop//Main//PhD//course_work//ML//Project//data//pubTable//PubTables-1M-Image_Table_Structure_PASCAL_VOC//PubTables1M-Structure-PASCAL-VOC
-And
-Then run this command to train the table detection model : 
 
-(tables-detr2) C:\Users\malvi\ML_project\table-transformer-main\src>python main.py --data_type detection --config_file detection_config.json --data_root_dir C://Users//malvi//Desktop//Main//PhD//course_work//ML//Project//data//pubTable//PubTables-1M-Image_Page_Detection_PASCAL_VOC//PubTables1M-Detection-PASCAL-VOC 
+And Then run this command to train the table detection model : 
 
-Then the training will start and the model weights will get store in the output folder inside the PubTables1M-Structure-PASCAL-VOC folder. We can use this model in the inference stage to test on top of our new data.
+> (tables-detr2) C:\Users\malvi\ML_project\table-transformer-main\src>python main.py --data_type detection --config_file detection_config.json --data_root_dir C://Users//malvi//Desktop//Main//PhD//course_work//ML//Project//data//pubTable//PubTables-1M-Image_Page_Detection_PASCAL_VOC//PubTables1M-Detection-PASCAL-VOC 
 
-Huggingface Table-Transformer.
+> Then the training will start and the model weights will get store in the output folder inside the PubTables1M-Structure-PASCAL-VOC folder. We can use this model in the inference stage to test on top of our new data.
+
+### Huggingface Table-Transformer.
+
 Hugging face has inferenced the Table Transformer model by using the pre-trained models for both Table Detection and Table Structure recognition. 
 •	Two models were published by the authors: one for document table detection and the other for table structure recognition (the task of recognising the individual rows, columns etc. in a table).
 •	In order to prepare photos and optional targets for the model, one can utilize the AutoFeatureExtractor API (Auto Classes (huggingface.co)). A DetrFeatureExtractor (DETR (huggingface.co)) will be loaded in the background as a result.
