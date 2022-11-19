@@ -94,7 +94,7 @@ Table Structure Recognition Output
 
 #### Confidence score and Bounding Boxes Coordinates
  
-![Confidence score and Bounding Boxes Coordinates](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture8.jpg)
+![Confidence score and Bounding Boxes Coordinates](./assets/Picture8.jpg)
 
 
 
