@@ -13,7 +13,7 @@ Model github repo is in : [microsoft/table-transformer: Model training and evalu
 
 It has 575,305 pages of annotated documents that have tables on them for table detection. 947,642 completely annotated tables with comprehensive location (bounding box) data and text content for identifying table structure and performing functional analysis. All table rows, columns, and cells (including empty cells), as well as other marked structures like column headers and projected row headers, have complete bounding boxes in image and PDF coordinates.
 
-All tables and pages were rendered as pictures. For every word that appears in each table and page graphic, there are bounding boxes and text. Additional cell attributes weren't employed in the model's training at this time. To ensure the annotations are as noise-free as feasible, they had also canonicalized cells in the headers and used a number of quality check procedures. For further details you can check in there given paper : 2110.00061.pdf (arxiv.org)
+All tables and pages were rendered as pictures. For every word that appears in each table and page graphic, there are bounding boxes and text. Additional cell attributes weren't employed in the model's training at this time. To ensure the annotations are as noise-free as feasible, they had also canonicalized cells in the headers and used a number of quality check procedures. For further details you can check in there [given paper](https://arxiv.org/pdf/2110.00061.pdf)
 
 - Also they had provided the weights of the pretrained models for both Table detection and Table structure detection which can be used to train on our new data.
 
