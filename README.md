@@ -1,4 +1,4 @@
-# Steps and Links of Table-Transformer Model.
+#ffffff Steps and Links of Table-Transformer Model.
 
 
 
@@ -76,7 +76,7 @@ Confidence score and Bounding Boxes Coordinates
 
 
 
-# Steps and Links of TableNet Model
+#ffffff Steps and Links of TableNet Model
 
 With the increase use of mobile devices, customers tend to share documents as images rather than scanning them. These images are later processed manually to get important information stored in Tables. These tables can be of different sizes and structures. It is therefore expensive to get information in Tables from images.
 With TableNet we will employ and end-to-end Deep learning architecture which will not only localize the Table in an image, but will also generate structure of Table by segmenting columns in that Table.
