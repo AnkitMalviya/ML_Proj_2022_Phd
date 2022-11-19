@@ -52,11 +52,12 @@ And Then run this command to train the table detection model :
 ### Huggingface Table-Transformer.
 
 Hugging face has inferenced the Table Transformer model by using the pre-trained models for both Table Detection and Table Structure recognition. 
-•	Two models were published by the authors: one for document table detection and the other for table structure recognition (the task of recognising the individual rows, columns etc. in a table).
-•	In order to prepare photos and optional targets for the model, one can utilize the AutoFeatureExtractor API (Auto Classes (huggingface.co)). A DetrFeatureExtractor (DETR (huggingface.co)) will be loaded in the background as a result.
+
+>	Two models were published by the authors: one for document table detection and the other for table structure recognition (the task of recognising the individual rows, columns etc. in a table).
+>	In order to prepare photos and optional targets for the model, one can utilize the AutoFeatureExtractor API (Auto Classes (huggingface.co)). A DetrFeatureExtractor (DETR (huggingface.co)) will be loaded in the background as a result.
 
 
-TableTransformerModel
+#### TableTransformerModel
  
 
 TableTransformerForObjectDetection
