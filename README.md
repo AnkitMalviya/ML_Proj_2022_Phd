@@ -16,7 +16,7 @@ You can change the number of epochs in the structure.config and dectron.config f
 For the evaluation metrices used in the table transformer researcher had focused on the GriTs method, 2203.12555.pdf (arxiv.org)
 To download the dataset please follow the following link : Microsoft Research Open Data (msropendata.com)
 
-Steps to Train and Test the Model.
+## Steps to Train and Test the Model.
 
 First we need to create the environment if it’s not there in the conda environment list. The environment name will be tables-detr. 
 Step 1 : Check whether the env is there or not by using cmd in linux terminal :
