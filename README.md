@@ -1,4 +1,4 @@
-#ffffff Steps and Links of Table-Transformer Model.
+# Steps and Links of Table-Transformer Model.
 
 
 
@@ -13,7 +13,7 @@ Model github repo is in : microsoft/table-transformer: Model training and evalua
 ##### Also they had provided the weights of the pretrained models for both Table detection and Table structure detection which can be used to train on our new data.
 ##### They trained the models for 20 epochs only.
 ##### You can change the number of epochs in the structure.config and dectron.config file at the src folder. And also can reduce the size of the data at the text files of the table structure and pdf annotation dataset folder for training purpose.
-##### For the evaluation metrices used in the table transformer researcher had focused on the GriTs method, 2203.12555.pdf (arxiv.org)
+##### For the evaluation metrices used in the table transformer researcher had focused on the [GriTs method](https://arxiv.org/abs/2203.12555)
 ##### To download the dataset please follow the following link : Microsoft Research Open Data (msropendata.com)
 
 ### Steps to Train and Test the Model.
@@ -76,7 +76,7 @@ Confidence score and Bounding Boxes Coordinates
 
 
 
-#ffffff Steps and Links of TableNet Model
+# Steps and Links of TableNet Model
 
 With the increase use of mobile devices, customers tend to share documents as images rather than scanning them. These images are later processed manually to get important information stored in Tables. These tables can be of different sizes and structures. It is therefore expensive to get information in Tables from images.
 With TableNet we will employ and end-to-end Deep learning architecture which will not only localize the Table in an image, but will also generate structure of Table by segmenting columns in that Table.
