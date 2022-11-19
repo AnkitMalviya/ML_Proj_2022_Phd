@@ -59,8 +59,9 @@ Hugging face has inferenced the Table Transformer model by using the pre-trained
 
 #### TableTransformerModel
 
+<picture>
 ![This is an image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture1.jpg)
- 
+</picture>
 
 TableTransformerForObjectDetection
  
