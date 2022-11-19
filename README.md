@@ -64,6 +64,7 @@ Hugging face has inferenced the Table Transformer model by using the pre-trained
 
 
 Table Transformer For Object Detection
+
 ![TableTransformerForObjectDetection](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture2.jpg)
  
 
@@ -72,14 +73,17 @@ Table Transformer For Object Detection
 ![TableDetectionOutput](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture3.jpg)
  
 
-![Table Detection Result](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture3.jpg)
+![Table Detection Result](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture4.jpg)
  
 
 
 
 Table Structure Recognition Output
 
+![Table Structure Recognition Output](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture5.jpg)
+
  
+![Table Structure Recognition Result](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture6.jpg)
 
 
  
