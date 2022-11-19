@@ -57,22 +57,22 @@ Hugging face has inferenced the Table Transformer model by using the pre-trained
 >	In order to prepare photos and optional targets for the model, one can utilize the AutoFeatureExtractor API (Auto Classes (huggingface.co)). A DetrFeatureExtractor (DETR (huggingface.co)) will be loaded in the background as a result.
 
 
-#### TableTransformerModel
+#### Table Transformer Model
 
 
-![This is an image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture1.jpg)
+![TableTransformerModel](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture1.jpg)
 
 
-TableTransformerForObjectDetection
+Table Transformer For Object Detection
+![TableTransformerForObjectDetection](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture2.jpg)
  
 
-*Before running the codes we need to install the dependencies : Dependencies_Installation (sagemaker.aws)
-Our Table Transformer inference model is present at : Table_Transformer_Beazley_data (sagemaker.aws)
+#### Table Detection Output
 
-Table Detection Output
-
+![TableDetectionOutput](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture3.jpg)
  
 
+![Table Detection Result](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture3.jpg)
  
 
 
