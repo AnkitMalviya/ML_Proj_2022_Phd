@@ -20,13 +20,16 @@ All tables and pages were rendered as pictures. For every word that appears in e
 - They trained the models for 20 epochs only.
 
 
-##### You can change the number of epochs in the structure.config and dectron.config file at the src folder. And also can reduce the size of the data at the text files of the table structure and pdf annotation dataset folder for training purpose.
-##### For the evaluation metrices used in the table transformer researcher had focused on the [GriTs method](https://arxiv.org/abs/2203.12555)
-##### To download the dataset please follow the following link : Microsoft Research Open Data (msropendata.com)
+You can change the number of epochs in the structure.config and dectron.config file at the src folder. And also can reduce the size of the data at the text files of the table structure and pdf annotation dataset folder for training purpose.
+
+For the evaluation metrices used in the table transformer researcher had focused on the [GriTs method](https://arxiv.org/abs/2203.12555)
+
+To download the dataset please follow the following link : [Microsoft Research Open Data](https://msropendata.com/datasets/505fcbe3-1383-42b1-913a-f651b8b712d3)
 
 ### Steps to Train and Test the Model.
 
-First we need to create the environment if it’s not there in the conda environment list. The environment name will be tables-detr. 
+#### First we need to create the environment if it’s not there in the conda environment list. The environment name will be tables-detr. 
+
 > Step 1 : Check whether the env is there or not by using cmd in linux terminal :
 ‘conda env list ‘ where env name will be : tables-detr
 If the environment is not installed then we have to create the environment by going to this particular path which is : cd SageMaker/ table-transformer/
