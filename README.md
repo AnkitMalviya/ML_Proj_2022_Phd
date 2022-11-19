@@ -152,33 +152,50 @@ Basic idea of preprocessing:
 •	converting processed_data to csv file.
 
 >	Let’s check the masks that were created based on table and column coordinates
+
 ![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture1.png)
  
 
 ##                               Steps to Train and Test the Model
 
 We will use DenseNet121 as encoder and build model upon it.
+
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture2.png)
+
  
 Path-  "/home/ec2-user/SageMaker/Ayush/TableNet-pytorch-main “
 
 Trainable Params
  
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture3.png)
 
 We constrained the training epochs to 50–100, and tried different models for encoders.
 
  Densenet121 worked best as encoder compared to VGG19, ResNet-18 and EfficientNet. It is worth mentioning that performance of ResNet-18 and EfficientNet was almost close to DenseNet, but I chose the model based on Best F1 Score on Test data.
 
 Test function takes data loader, model and loss as input and returns F1 Score, Accuracy, Precision, Recall and Loss for that epoch.
+
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture4.png)
  
+
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture5.png)
  
+
 Model testing result: - Model testing will generate the table and column mask, using this masks we can crop the table image and then we can extract the information using Tesseract OCR, which provided by AWS.
+
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture6.png)
 
  
 After this we will crop the mask image using the boundary boxes.
+
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture7.png)
+
  
 Once we have Crop image, we can extract the information using Tesseract OCR, which provided by AWS.
+
+![image](https://github.com/AnkitMalviya/ML_Proj_2022_Phd/tree/main/assets/Picture8.png)
  
-Observations
+### Observations
 
 •	we have observed   that Bad / worst predictions are given by images with colored tables. Model didn't predict anything and F1 score is close to 0.0. There are very few images in the dataset which have colored tables.
 
@@ -187,7 +204,7 @@ Observations
 •	Best Predictions are images which helped model learn table and column boundaries even without line demarcations
 
 
-Fixing Image Problems
+### Fixing Image Problems
 
 We have 2 options, which might improve model performance,
 
@@ -195,13 +212,13 @@ We have 2 options, which might improve model performance,
 
 •	We can have uniform data by converting all images to grayscale first and then increase the number of channels in preprocessing, and Train model again.
 
-Improving model predictions using OpenCV2
+### Improving model predictions using OpenCV2
 
 We can still see uneven boundaries of predicted table and column masks. In some cases, Table mask predictions are not even filled inside. If we directly crop the mask portions of the image to get Table, we might lose some information. Not to mention, there are other areas with activations in the predicted table mask (which are not tables).
 
 To solve these issues, we will use contours from classical image processing techniques.
 
-Basic Idea :
+### Basic Idea :
 
 •	Get contours around the activation from the predicted table mask.
 
@@ -211,7 +228,7 @@ Basic Idea :
 
 •	Repeat the same process with Column Masks
 
-Reference:- [2001.01469] TableNet: Deep Learning model for end-to-end Table detection and Tabular data extraction from Scanned Document Images (arxiv.org)
+Reference:- [TableNet: Deep Learning model for end-to-end Table detection and Tabular data extraction from Scanned Document Images](https://arxiv.org/abs/2001.01469)
 
 
 
